@@ -1,0 +1,83 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.1.0",
+  "id": "98fc546e-ef74-42cb-8a16-9e7df8c9851f",
+  "packageName": "com.microsoft.teams.teav1",
+  "developer": {
+    "name": "everis",
+    "websiteUrl": "http://www.everis.com",
+    "privacyUrl": "https://knowler.everis.com",
+    "termsOfUseUrl": "https://e17r5k-datap1.s3-eu-west-1.amazonaws.com/evercorp/s3fs-public/quality_policy.pdf?clUVJknIn_B2.I4rIGdFR_w_AmbpN4iP"
+  },
+  "icons": {
+    "color": "bot.png",
+    "outline": "mini.png"
+  },
+  "name": {
+    "short": "Tea"
+  },
+  "description": {
+    "short": "Asistente en Teams de everis",
+    "full": "Asistente en Teams de everis"
+  },
+  "accentColor": "#64A2CC",
+  "bots": [
+    {
+      "botId": "a0f0fb22-aa7a-498e-bfb9-8036ff8abf1b",
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Alta de nuevo Usuario",
+              "description": "Nueo usuario"
+            },
+            {
+              "title": "Solicitud de conexion de Red",
+              "description": "Connexion Wifi/Cable"
+            },
+            {
+              "title": "Solicitud de Equipo",
+              "description": "Equipo nuevo" 
+            },
+            {
+              "title": "Contactar Agente de ServiceDesk",
+              "description": "Traspaso a ServiceDesk"
+            },
+            {
+              "title": "Comparte feedback",
+              "description": "Send feedback"
+            }
+
+          ]
+        }
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "help",
+      "name": "Ayuda",
+      "contentUrl": "https://knowler.everis.com",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "teav1.azurewebsites.net"
+  ]
+}
